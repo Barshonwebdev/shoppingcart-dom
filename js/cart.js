@@ -4,8 +4,6 @@ function increaseOrDecreaseItem(elementId,currentNumber,currentPrice){
       const NumberElementString = NumberElement.value;
       const previousValue = parseInt(NumberElementString);
       const priceElement = document.getElementById(currentPrice);
-      const priceElementString=priceElement.innerText;
-      const previousPrice=parseFloat(priceElementString);
       if(elementId=="case-plus" || elementId=="phone-plus"){
         let eachPrice=0;
         if(elementId=="case-plus"){
@@ -54,7 +52,6 @@ function increaseOrDecreaseItem(elementId,currentNumber,currentPrice){
       totalAndSet(subTotalGet,taxAmountNumber,"total");
     });
 }
-
 increaseOrDecreaseItem("case-plus","case-number","case-price");
 increaseOrDecreaseItem("phone-plus","phone-number","phone-price");
 increaseOrDecreaseItem("case-minus","case-number","case-price");
